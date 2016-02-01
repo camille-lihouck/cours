@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=reference\ color\ power
+comment0.target=Lightbulb(java.lang.String,\ java.lang.String,\ float)
+comment0.text=\ build\ a\ Lightbulb\ carracterized\ by\ its\ reference,\ its\ power\ and\ its\ color\n\ @param\ reference\ (String)\ the\ Lightbulb\ reference's\n\ @param\ color\ (String)\ the\ Lightbulb\ color's\n\ @param\ power\ (float)\ the\ Lightbulb\ required\ power's\n
+comment1.params=
+comment1.target=void\ lightOn()
+comment1.text=\ turns\ on\ the\ light\n\ \n
+comment2.params=
+comment2.target=void\ lightOff()
+comment2.text=\ turns\ off\ the\ light\n\ \n
+comment3.params=
+comment3.target=float\ getPower()
+comment3.text=\ get\ the\ power\ required\ for\ the\ Lightbulb\n\ @return\ the\ required\ power\ (float)\n
+comment4.params=
+comment4.target=java.lang.String\ getColor()
+comment4.text=\ get\ the\ color\ of\ the\ Lightbulb\n\ @return\ the\ color\ (String)\n
+comment5.params=
+comment5.target=java.lang.String\ getState()
+comment5.text=\ get\ the\ state\ of\ the\ Lightbulb\n\ @return\ the\ state\ of\ the\ Lightbulb\ (String)\n
+comment6.params=
+comment6.target=java.lang.String\ getReference()
+comment6.text=\ get\ the\ reference\ of\ the\ Lightbulb\n\ @return\ the\ reference\ of\ the\ Lightbulb\ (String)\n
+numComments=7

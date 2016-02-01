@@ -1,0 +1,2 @@
+mcu_fatal.o : mcu_fatal.c mcu_fatal.h
+	gcc -c mcu_fatal.c

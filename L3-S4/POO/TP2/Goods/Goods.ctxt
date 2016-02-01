@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=name
+comment0.target=Goods(java.lang.String)
+comment0.text=\ build\ a\ goods\ carracterized\ by\ is\ name,\ the\ value\ is\ initialized\ at\ 0\n\ @param\ name(String)\ the\ name\ of\ the\ goods\n
+comment1.params=name\ value
+comment1.target=Goods(java.lang.String,\ double)
+comment1.text=\ build\ a\ goods\ carracterized\ by\ is\ name\ and\ an\ initialized\ value\n\ @param\ name\ (String)\ the\ name\ of\ the\ goods\n\ @param\ value\ (double)\ the\ value\ of\ the\ goods\n
+comment2.params=
+comment2.target=double\ getValue()
+comment2.text=\ get\ the\ value\ of\ a\ goods\n\ @return\ the\ value\ of\ a\ goods\ (double)\n
+comment3.params=value
+comment3.target=void\ changeValue(double)
+comment3.text=\ change\ the\ value\ of\ a\ goods\n\ @param\ value\ (double)\ the\ new\ value\ of\ a\ goods\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\ get\ the\ name\ of\ a\ goods\n\ @return\ the\ name\ of\ a\ goods\ (String)\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\ provides\ a\ string\ representation\ of\ a\ goods\ \ with\ its\ name\ and\ its\ value\n\ @return\ a\ string\ representation\ of\ a\ goods\n
+comment6.params=
+comment6.target=double\ valueTTC()
+comment6.text=\ gives\ the\ value\ TTC\ of\ a\ goods\n\ @return\ the\ value\ TTC\ of\ a\ goods\ (double)\n
+numComments=7

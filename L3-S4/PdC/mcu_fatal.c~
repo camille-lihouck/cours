@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include 'mcu_fatal.h'
+
+void fatal(int assert, const char message[], int status){
+  
+  return 0;
+}

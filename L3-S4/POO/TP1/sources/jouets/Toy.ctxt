@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=brand
+comment0.target=Toy(java.lang.String)
+comment0.text=\ builds\ a\ toy\ with\ given\ brand\n\ @param\ brand\ the\ toy's\ brand\n
+comment1.params=
+comment1.target=void\ display()
+comment1.text=\ displays\ information\ on\ this\ toy\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\ provides\ a\ String\ representing\ this\ toy\n\ @return\ a\ string\ representation\ of\ this\ toy\n
+numComments=3
