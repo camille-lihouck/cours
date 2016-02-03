@@ -1,0 +1,115 @@
+/**
+ * Word class : methods on Words (tp3) licence S4 - UE POO
+ * 
+ * @author : 
+ */
+
+public class Word {
+
+	// ATTRIBUTS
+        /* contains the string that represents the charcter of this word */
+	private String value;
+
+	// CONSTRUCTEURS
+	public Word(String s) {
+		this.value = s;
+	}
+
+	// METHODES
+	/**
+	 * returns <code>true</code> if <code>o</code> is equals to this word object, ie if
+	 * <code>o</code> is a Word and its value is the same as this word's value
+	 * 
+	 * @param o
+	 *            the object to be compared with this Word
+	 * @return <code>true</code> iff <code>o</code> is a Word with the same value as this word.
+	 */
+	public boolean equals(Object o) {
+		if (o instanceof Word) {
+			Word theOther = (Word) o;
+			return this.value.equals(theOther.value);
+		} else {
+			return false;
+		}
+	}
+
+	/**
+	 * TODO
+	 *
+	 */
+	public int nbOfChars() {
+		return -1000;
+	}
+
+	/**
+	 * TODO
+	 *
+	 */
+	public String toString() {
+		return null;
+	}
+
+	/**
+	 * TODO
+	 *
+	 */
+	public int nbOccurrencesOfChar(char c) {
+		return -1000;
+	} // nbOccurrencesOfChar
+
+	/**
+	 * TODO
+	 *
+	 */
+	public Word reverse() {
+		return null;
+	}
+
+	/**
+	 * TODO
+	 * 
+	 */
+	public boolean isPalindrome() {
+		return false;
+	} // estPalindrome
+
+	/**
+	 * TODO Word
+	 * 
+	 */
+	public boolean contains(Word m) {
+		return false;
+	}
+
+	/**
+	 * TODO
+	 * 
+	 */
+	public boolean rhymesWith(Word m) {
+		return false;
+	}
+
+	/**
+	 * TODO
+	 */
+	public boolean isProperNoun() {
+		return false;
+	}
+
+	/**
+	 * TODO
+	 * 
+	 */
+	public boolean isAnagram(Word m) {
+		return false;
+	}
+
+	/**
+	 * TODO
+	 * 
+	 */
+	public Word[] extractBefore(char c) {
+		return null;
+	}
+
+}
