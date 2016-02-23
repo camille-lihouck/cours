@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=capacity
+comment0.target=MultiSwitch(int)
+comment0.text=build\ a\ MultiSwitch\ of\ a\ given\ capacity\n\ @param\ capacity\ the\ number\ Lightbulb\ you\ can\ link\ to\ the\ MultiSwitch\n
+comment1.params=i\ lightbulb
+comment1.target=void\ setLightbulb(int,\ Lightbulb)
+comment1.text=\ Set\ the\ (i-1)st\ lightbulb\ controlled\ by\ the\ multiswitch\n\ @param\ i\ the\ bulb\ index\n\ @param\ lightbulb\ the\ controlled\ bulb\n
+comment2.params=
+comment2.target=void\ changeState()
+comment2.text=\ Turns\ on\ the\ ligths\ if\ they\ are\ off\ and\ reverse.\n\ \n
+comment3.params=
+comment3.target=void\ displayAllBulbStates()
+comment3.text=\ display\ the\ state\ of\ all\ bulbs\ controlled\ by\ the\ multiswitch\n\ \n
+numComments=4

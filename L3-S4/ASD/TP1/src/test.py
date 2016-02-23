@@ -45,9 +45,19 @@ def negative_markers1(markers,positive):
 
 # STRATEGY 2
 def negative_markers2(markers,positive):
+    """
+    Computes the list of negative markers from the list of markers and
+    the list of positive markers.
+
+    :param markers: The list of markers
+    :type markers: List of String
+    :param positive: The list of positive markers
+    :type positive: List of String
+    :return: The list of negative markers
+    :rtype: List of String
+    """
     negative = []
     positive=sorting.merge_sort(positive,compare)
-    cpt=0
     for element in markers:
         if not recherche_dichotomique(element,positive):
             negative.append(element)
@@ -55,6 +65,15 @@ def negative_markers2(markers,positive):
 
     
 def recherche_dichotomique(element,li):
+    """
+    Recursive implementation of binary search algorithm
+
+    :param element: the element to search
+    :type element: element of li
+    :param li: the list to search in
+    :type li: list of element
+    :return: True if element in li False otherwise
+    """
     if len(li)==1:
         if compare(element,li[0])==0:
             return True
@@ -62,13 +81,26 @@ def recherche_dichotomique(element,li):
             return False
     else:
         middle=len(li)//2
-        if element<li[middle]:
+        if compare(element,li[middle])==-1:
             return recherche_dichotomique(element, li[:middle])
         else:
             return recherche_dichotomique(element, li[middle:])
 
+
+
 # STRATEGY 3
 def negative_markers3(markers,positive):
+    """
+    Computes the list of negative markers from the list of markers and
+    the list of positive markers.
+
+    :param markers: The list of markers
+    :type markers: List of String
+    :param positive: The list of positive markers
+    :type positive: List of String
+    :return: The list of negative markers
+    :rtype: List of String
+    """
     negative = []
     positive=sorting.merge_sort(positive,compare)
     markers=sorting.merge_sort(markers,compare)
@@ -85,6 +117,9 @@ def negative_markers3(markers,positive):
         else:
             negative.append(element)
     return negative
+
+
+# Executable Tests
         
 if __name__ == "__main__":
     if len (sys.argv)>2:

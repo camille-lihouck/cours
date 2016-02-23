@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=lightbulb
+comment0.target=Switch(Lightbulb)
+comment0.text=\ build\ a\ new\ switch\n\ @param\ lightbulb\ the\ lightbulb\ linked\ to\ the\ switch\n
+comment1.params=
+comment1.target=void\ changeLight()
+comment1.text=\ turn\ on\ the\ light\ if\ it's\ off\ and\ reverse\n\ \n
+comment2.params=
+comment2.target=java.lang.String\ getLightState()
+comment2.text=\ get\ the\ state\ of\ the\ Light\n\ @return\ the\ state\ of\ the\ light\n
+numComments=3
