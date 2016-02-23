@@ -45,20 +45,21 @@
 		<svg>		
 			<?php
 				require ('fonctionsSVG.php');
-				$figure=$_GET['figure'];
+				$figures=$_GET['figure'];
 				$cx=$_GET['cx'];
 				$cy=$_GET['cy'];
 				$r=$_GET['r'];
-				if ($figure==cercle){
-					echo cercle($cx,$cy,$r);
+				foreach( $figures as $figure){
+					if ($figure==cercle){
+						echo cercle($cx,$cy,$r);
+					}
+					else if ($figure==rectangle){
+						echo carreInscrit($cx,$cy,$r);	
+					}
+					else if ($figure==triangle){
+						echo triangleInscrit($cx,$cy,$r);
+					}
 				}
-				else if ($figure==rectangle){
-					echo carreInscrit($cx,$cy,$r);	
-				}
-				else if ($figure==triangle){
-					echo triangleInscrit($cx,$cy,$r);
-				}
-	
 			?>
 		</svg>
 	</body>
