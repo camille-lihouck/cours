@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	</head>
+	<body>
+		<?php
+			require (station.php);			
+			$line="07005;ABBEVILLE;50.136000;1.834000;69";
+			$array=create_station($line);
+			foreach($array as $key){
+				echo "<h3>".$key."</h3><ul>";
+				foreach($array[$key] as $value)
+					echo"<li>".$value."</li>";
+				echo "</ul>";
+		?>
+	</body>
+</html>

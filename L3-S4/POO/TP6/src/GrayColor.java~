@@ -1,0 +1,25 @@
+/**
+
+ */
+
+public class GrayColor{
+    //attributs
+    public static final GrayColor  WHITE;
+    public static final GrayColor BLACK;
+    private int level;
+
+    //constructeurs
+    public GrayColor(int level){
+	this.WHITE = 255;
+	this.BLACK = 0;
+	this.level = level
+    }
+
+    //méthodes
+    public int getLevel(){
+	return this.level;
+    }
+
+    public boolean (Object o){
+    }
+}
