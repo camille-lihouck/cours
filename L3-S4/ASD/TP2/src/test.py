@@ -10,6 +10,7 @@
 
 import sorting
 import generate
+import copy
 
 global cpt
 
@@ -30,8 +31,8 @@ def cmp(a,b):
     >>> cmp(5,10)
     1
     """
-   # global cpt
-    #cpt = cpt + 1
+    global cpt
+    cpt = cpt + 1
     if a == b:
         return 0
     elif a < b:
@@ -42,15 +43,34 @@ def cmp(a,b):
 if __name__ == "__main__":
     cpt = 0
     t = generate.random_list(100)
+    t2 = copy.deepcopy(t)
+    t3 = copy.deepcopy(t)
     tt = sorting.merge_sort(t,cmp)
     print (tt)
     if generate.is_sorted (tt):
         print("Yes !!") 
     else:
         raise Exception("List has not been correctly sorted by merge sort")
-
-    sorting.quicksort(t,cmp)
+    print("Number of comparisons merge sort: %d"%(cpt))
+    cpt=0
+    sorting.quicksort(t,cmp,'first')
     if generate.is_sorted (t):
         print("Yes !!") 
     else:
-        raise Exception("List has not been correctly sorted by quicksort")
+        raise Exception("List has not been correctly sorted by quicksort with the first element as pivot")
+    print("Number of comparisons quicksort (first element as pivot):%d"%(cpt))
+    cpt=0
+    sorting.quicksort(t2,cmp,'random')
+    if generate.is_sorted (t2):
+        print("Yes !!") 
+    else:
+        raise Exception("List has not been correctly sorted by quicksort with a random pivot")
+    print("Number of comparisons quicksort (random pivot):%d"%(cpt))
+    cpt=0
+    # le calcul optimal ne fonctionne pas
+   # sorting.quicksort(t2,cmp,'optimal')
+   # if generate.is_sorted (t3):
+   #     print("Yes !!") 
+   # else:
+   #     raise Exception("List has not been correctly sorted by quicksort with a random pivot")
+   #print("Number of comparisons quicksort (random pivot):%d"%(cpt))

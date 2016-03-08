@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "mcu_fatal.h"
 
 void fatal(int assert, const char message[], int status){
   if (assert){
-    int i;
-    i=0;
-    while (message[i]){
-      putc(message[i], stderr);
-      i++;
+    for ( int c =0; c< strlen(message); c++){
+      putc( c, STDERR)
     }
-    exit(status);
+    exit();
   }
+  exit();
 }

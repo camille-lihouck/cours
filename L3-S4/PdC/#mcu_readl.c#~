@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include "mcu_readl.h"
+#include "mcu_macros.h"
+
+int readl(int line[]){
+  

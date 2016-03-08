@@ -47,13 +47,61 @@ if __name__ == "__main__":
         
     list.print_list(l);
 
+<<<<<<< HEAD
+    # test 0 : impression renversee
+=======
     #test 0 : impression renversee
+>>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
     list.print_list(l,reverse=True)
 
     # test 1 : impression avec iterateurs
     print_with_iterator(l)
     print_with_iterator_reverse(l)
 
+<<<<<<< HEAD
+    # test 2 : insertion avant le 2eme element
+    it = list.get_listiterator (l)
+    print(list.next(it))
+    print(list.next(it))
+    list.add(it,12)
+    assert(list.previous(it) == 12)
+    print_with_iterator(l)
+    print_with_iterator_reverse(l)
+
+    # test 3 : insertion avant le dernier element
+    it = list.get_listiterator (l)
+    while (list.hasNext(it)):
+        list.next(it)
+    list.add(it,34)
+    assert(list.previous(it) == 34)
+    print_with_iterator(l)
+    print_with_iterator_reverse(l)
+
+    # test 4 : insertion avant le premier element
+    it = list.get_listiterator (l)
+    list.add(it,0)
+    assert(list.next(it) == 0)
+    print_with_iterator(l)
+    print_with_iterator_reverse(l)
+
+    # test 5 : insertion avant le dernier element avec l'iterateur placé en fin
+    it = list.get_listiterator (l,True)
+    list.previous(it)
+    list.add(it,344)
+    assert(list.previous(it) == 344)
+    print_with_iterator(l)
+    print_with_iterator_reverse(l)
+
+    # test 6 : affichage à l'envers avec l'itérateur placé en fin
+    print_with_iterator_reverse_bis(l)
+
+    # test 7 : ajout après le dernier élément
+    it = list.get_listiterator (l,True)
+    list.add(it,44)
+    assert(list.previous(it) == 44)
+    print_with_iterator(l)
+    print_with_iterator_reverse(l)
+=======
     # test 2 : insertion avant le 3eme element
     #it = list.get_listiterator (l)
     #print(list.next(it))
@@ -96,6 +144,7 @@ if __name__ == "__main__":
     #assert(list.previous(it) == 5)
     #print_with_iterator(l)
     #print_with_iterator_reverse(l)
+>>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
         
     # test 8 : inserer trié, à vous d'écrire ce test
 

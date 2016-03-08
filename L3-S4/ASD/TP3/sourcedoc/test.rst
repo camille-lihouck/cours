@@ -1,0 +1,6 @@
+-------------
+Test
+-------------
+
+.. automodule:: test
+   :members:

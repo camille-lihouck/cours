@@ -1,6 +1,0 @@
-------------
-generate
-------------
-
-  .. automodule:: generate
-     :members:
