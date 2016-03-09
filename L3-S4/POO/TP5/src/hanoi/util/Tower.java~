@@ -1,0 +1,11 @@
+package hanoi.util;
+import hanoi.util.Disc;
+
+/**
+ *A tower is a support on wich you can put disc
+ *
+ *
+ */
+
+public class Tower {
+}
