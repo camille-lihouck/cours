@@ -97,15 +97,12 @@ def __print_without_iterator_reversed (c):
     :param c: A cell
     :type c: dict
     """
-<<<<<<< HEAD
-    pass
-=======
     if __empty_cell(c):
         print()
     else:
         print(c["value"],end=' ')
         __print_without_iterator_reversed(c["prev"])
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
+
 
 def print_list (l,reverse=False):
     if is_empty(l):
@@ -115,26 +112,19 @@ def print_list (l,reverse=False):
     else:
         __print_without_iterator (l["head"])
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
 def get_listiterator (l, from_the_end = False):
     """
-    Creates a newiterator for list *l*.
+    Creates a newiterator for list *l*. if from_the_end =True, the iterator will be returned at the end of the list
 
     :param l: The list
     :type l: dict
     :return: An iterator at the begining of the list
     :rtype: dict
     """
-<<<<<<< HEAD
-    return { }
-=======
     if from_the_end:
-        return {"prev": l["tail"],"next": __empty_cell()}
-    return {"prev" : __empty_cell() , "next" : l["head"] }
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
+        return {"prev": l["tail"],"next": None,"list":l}
+    return {"prev" : None , "next" : l["head"],"list":l }
+
 
 def hasNext (it):
     """
@@ -147,11 +137,8 @@ def hasNext (it):
     :type it: dict
     :rtype: boolean
     """
-<<<<<<< HEAD
-    return False
-=======
-    return it["next"]!=__empty_cell()
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
+    return it["next"]!=None
+
 
 def next (it):
     """
@@ -167,17 +154,13 @@ def next (it):
     :type it: dict
     :rtype: Type of the elements of the list
     """
-<<<<<<< HEAD
-    pass
-=======
     if hasNext(it):
         it["prev"]=it["next"]
         it["next"]=it["next"]["next"]
         return it["prev"]["value"]
     else:
         raise NoSuchElementException("there is no next elements")
-        
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
+
 
 def hasPrevious (it):
     """
@@ -190,11 +173,8 @@ def hasPrevious (it):
     :type it: dict
     :rtype: boolean
     """
-<<<<<<< HEAD
-    return False
-=======
-    return it["prev"]!=__empty_cell()
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
+    return it["prev"]!=None
+
 
 def previous (it):
     """
@@ -210,16 +190,12 @@ def previous (it):
     :type it: dict
     :rtype: Type of the elements of the list
     """
-<<<<<<< HEAD
-    pass
-=======
     if hasPrevious(it):
         it["next"]=it["prev"]
         it["prev"]=it["prev"]["prev"]
         return it["next"]["value"]
     else:
         raise NoSuchElementException("there is no previous elements")
->>>>>>> 37051ce07e8770fe2b6f8aeaef1473627dd4f981
 
 def add (it,v):
     """Inserts the specified element into the list. The element is
@@ -235,5 +211,16 @@ def add (it,v):
     :type it: dict
     :param v: The element
     :type v: Any
+    :param l: the list to add a element
     """
-    pass
+    c=__new_cell(v,it['next'],it['prev'])
+    if hasNext(it):       
+        it['next']['prev']=c
+    else:
+        it['list']['tail']=c
+    if hasPrevious(it):
+        it['prev']['next']=c
+    else:
+        it['list']['head']=c
+    it['prev']=c
+        
