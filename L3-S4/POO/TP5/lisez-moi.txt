@@ -1,0 +1,4 @@
+Lihouck Camille
+
+Seule la question 1 a été traitée, il n'y a pas d'interaction possible avec le jeu, par contre l'ordinateur est capable de résoudre le jeu tout seul. Il n'y a pas non plus de fichier main executable facilement. Il y a juste les classes Disc, Tower et Hanoi d'implémentées
+

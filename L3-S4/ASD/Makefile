@@ -2,7 +2,7 @@
 # Makefile pour créer un projet
 
 # Adaptez la variable en y portant votre ou vos noms
-AUTHOR= Camille LIHOUCK Meryem AGAYER Farah BOUCHAHDANE
+AUTHOR= Camille LIHOUCK
 
 
 .PHONY: project clean
