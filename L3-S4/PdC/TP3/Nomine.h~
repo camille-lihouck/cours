@@ -1,0 +1,25 @@
+typedef enum Category Category;
+enum Category{
+  "Literature","Physics","Chemistry","Peace","Physiology","Medicine"
+};
+
+typedef enum Gender Gender;
+enum Gender{
+  "male","female"
+};
+
+struct Date{
+  int year;
+  int month;
+  int day;
+}
+
+struct Nomine_s{
+  int date;
+  Category category;
+  char name[50];
+  Date birth;
+  char nationality[30];
+  Gender gender;
+}
+  

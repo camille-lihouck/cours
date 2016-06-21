@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Nomine.h"
+#define MAXTAB 5
+
+struct Nomine_s listNomine[MAXTAB];
+
+int ConstruireTableaux( struct Nomine_s *){
+
+}

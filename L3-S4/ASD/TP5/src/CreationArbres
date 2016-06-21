@@ -1,0 +1,16 @@
+#include "Arbrebinaire.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+Noeud_t
+CreerArbre1
+()
+{
+	Noeud_t a1,fg,fd;
+	fg= CreerNoeud(9);
+	fd= CreerNoeud(8);
+	a1= CreerNoeud(12);
+	AjouterFilsGauche(a1,fg);
+	AjouterFilsDroit(a1,fd);
+	return a1;
+}
